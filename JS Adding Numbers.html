@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // function demo_constant ()
+        //  {
+        //     const num = 10;
+        //     num = 20;
+        //     document.write(num)
+        // }
+        function demo_add(n1, n2)
+        {
+            var var1=document.getElementById("n1").value;
+            var1=parseInt(var1)
+            var var2=document.getElementById("n2").value;
+            var2=parseInt(var2)
+            var result=var1+var2;
+            document.getElementById("lblresult").value = result ;
+        }
+    </script>
+</head>
+<body>
+    <h2>JavaScript const</h2>
+    <!-- <input type="button" value="Click Me" onclick="demo_constant()"> -->
+    <input id="n1" type="number" ><br><br>
+    <input id="n2" type="number" ><br><br>
+    <input id="demo" type="button" value="Add" onclick="demo_add()"> <br><br>
+    <input id="lblresult" type="label" ><br><br>
+</body>

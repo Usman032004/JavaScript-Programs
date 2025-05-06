@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    //    function bname_click() {
+    //     let num=10;
+    //     num=20;
+    //     document.write(num)
+    //    }
+        function demo_add(id1,id2){
+        var var1=document.getElementById("id1").value;
+        var var2=document.getElementById("id2").value;
+        var result=var1+var2;
+        document.getElementById("lblresult").value= result;
+    }
+    </script>
+</head>
+<body>
+    <h1> Calculate of Numbers Using JS</h1>
+    <input type="number" id="id1">
+    <input type="number" id="id2"><br>
+    <input type="button" id="demo" onclick="demo_add()" value="Add"><br>
+    <p> Result</p>
+    <input type="label" id="lblresult">
+</body>
+</html>

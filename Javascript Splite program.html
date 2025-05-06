@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function split_click(){
+        debugger;
+        var str=document.getElementById("txt1").value.trim();
+        var splitstr = str.split(" ");
+        arrsplit= splitstr.length + " ";
+        document.getElementById("lblString").innerHTML= arrsplit;
+    }
+    </script>
+</head>
+<body>
+    <h1> JAVASCRIPT SPLIT: </h1>
+    <p id="demo"></p>
+    <textarea id="txt1"></textarea><br><br>
+    <input type="button" value="Count of number of word" onclick="split_click()">
+    <label id="lblString"></label>
+</body>
+</html>

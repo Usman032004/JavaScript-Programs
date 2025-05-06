@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function demo(){
+            var str=document.getElementById("txt1").value;
+            var splitstr = str.split("");
+            var myArray= splitstr.reverse();
+            var joinArray= myArray.join("");
+            document.getElementById("lblString").innerHTML= joinArray;
+        }
+    </script>
+</head>
+<body>
+    <h1> JAVASCRIPT REVERSE: </h1>
+    <p>The Array.reverse() method reverses the order of the elements in an array.</p>
+    <p id="demo"></p>
+    <textarea id="txt1"></textarea><br>
+    <input type="button" value="change" onclick="demo()">
+    <label id="lblString"></label>
+</body>
+</html>

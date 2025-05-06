@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function findLargest() {
+        var str= document.getElementById("txt1").value;
+        var splitString = str.split(" ");
+        var largest = splitString[0];
+        var smallest = splitString[0];
+    
+        for (var i = 1; i < splitString.length; i++) {
+                if (splitString[i].length > largest.length) {
+                    largest = splitString[i];
+                }
+                if (splitString[i].length < smallest.length) {
+                    smallest = splitString[i];
+                }
+            }
+            document.getElementById("lblstring").innerHTML = "Largest: " + largest + "<br>Smallest: " + smallest;
+        }
+    </script>
+</head>
+<body>
+    <h1><i>Find the Largest and Smallest String {JS}</i></h1>
+    <textarea id="txt1">"My name is Mohammed Usman"</textarea><br>
+    <input id="find" type="button" value="find the largest" onclick="findLargest()">
+    <p id="lblstring"></p>
+    
+</body>
+</html>

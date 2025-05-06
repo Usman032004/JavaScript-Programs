@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function match(txt1,txt2){
+            var str= document.getElementById(txt1).value;
+            searchstr= document.getElementById(txt2).value;
+            var match= str.matchAll(searchstr);
+            var length= Array.from(match).length;
+            var str= `${searchstr} was found ${str} ${length} times`;
+            document.getElementById("lblString").innerHTML=str;
+        }
+    </script>
+</head>
+<body>
+    <h1> MATCHA LL:</h1>
+    <p id="match"></p>
+    <textarea id="txt1"> "The rain in SPAIN is mostly plain" </textarea><br><br>
+    <textarea id="txt2" onchange="match('txt1','txt2')"></textarea><br><br>
+    <label id="lblString"></label>
+</body>
+</html>

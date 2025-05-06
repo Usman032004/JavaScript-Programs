@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function demo (id1,id2){
+            alert("Match is found")
+        var text= document.getElementById(id1).value;
+        var ain= document.getElementById(id2).value;
+        myarr= text.match(/ain/g);
+        document.getElementById("match").innerHTML = myarr.length + " " ;
+        }
+    </script>
+<body>
+    <h1> JAVASCRIPT STRING MATCH() FUNCTION</h1>
+    <p id="match"></p>
+    <textarea id="txt1"> "The rain in SPAIN stays mainly in the plain" </textarea><br><br>
+    <textarea id="txt2"onchange="demo('txt1','txt2')"></textarea><br><br>
+</body>
+</head>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function btnclickme_click() {
+        alert ("Hello everyone..");
+    }
+    function demo_focus(sender,args){
+        alert (sender.id);
+    }
+    function demo_onkeyup(e){
+        alert (e.which);
+        var v= (e.which);
+        var  str=String.fromCharCode(v);
+        alert (str);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Click Me." id="bname" onclick="btnclickme_click();" value="Click Me.">
+    <p id="demo"> </p>
+    <input type="text" onfocus="demo_focus(this,'hello')">
+    <input type="text" onblur="demo_focus(this,'hi')">
+    <input type="text" onchange="demo_focus(this,'welcome')"><br><br>
+    <input type="text" onkeypress="demo_focus(this,'How are you')">
+    <input type="text" onkeyup="demo_focus(this,'fine')">
+    <input type="text" id="yoooo" onkeydown="return demo_focus(this,'how about you')" onkeyup="return demo_focus(this,'fine')"><br><br>
+    <input type="text" onkeyup="return demo_onkeyup(event)">
+    <input type="text" onkeyup="return demo_onkeyup(event)">
+</body>
+</html>

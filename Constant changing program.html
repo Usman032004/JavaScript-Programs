@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function demo_focus(){
+        try {
+            //debugger;
+            const bike = "H2R";                 // Create an Array:
+            bike = "Ducatti Panigale";          //Add an element:
+        }
+        catch (err) {
+            document.getElementById("demo").innerHTML = err;;      // Display the Array:
+        }
+    }
+    </script>
+</head>
+<body>
+    <h!> JAVASCRIPT CONSTANT PROGRAM:</h>
+    <p id="demo"></p>
+    <input type="text" onfocus="demo_focus()"><br><br>
+    <input type="button" value="click">
+</body>
+</html>

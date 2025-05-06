@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function demo(id1,id2){
+            alert(id1)
+        var text= document.getElementById(id1).value;
+        var texttosearch= document.getElementById(id2).value;
+        index= text.search(texttosearch);
+        document.getElementById("demo").innerHTML = index; 
+    } 
+    </script>
+</head>
+<body>   
+    <h1> JAVASCRIPT STRING SEARCH() FUNCTION</h1>
+    <p id="demo"></p>
+    <textarea id="txt1"> Mohammed Usman Wild Wolf </textarea><br><br>
+    <textarea id="txt2" onchange="demo('txt1','txt2')"></textarea><br><br>
+</body>
+</html>

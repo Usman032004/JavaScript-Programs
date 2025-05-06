@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function demo(name,collage){
+        var name=document.getElementById("txt1").value;
+        var collage= document.getElementById("txt2").value;
+        var str= `My name is: ${name}.Collage name: ${collage}`
+       // document.getElementById("lblString").innerText=str;
+        document.write(str);
+    }
+</script>
+</head>
+<body>
+    <h1> Template Literal: </h1>
+    <p id="demo"></p>
+    <textarea id="txt1"></textarea><br><br>
+    <textarea id="txt2" onchange="demo('txt1','txt2')"></textarea><br><br>
+    <label id="lblString"></label>
+</body>
+</html>

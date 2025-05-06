@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function Const(){
+        try{
+            const bike= "Kawasaki Ninija ZX10R";
+            bike= "BMW";
+        }
+        catch (err){
+            document.getElementById("demo").innerHTML= err;
+        }
+        //document.write(bike);        //By using document.write it clear all at the output page.
+        }
+    </script>
+</head>
+<body>
+    <h1> JAVASCRIPT CONSTANT PROGRAM: </h1>
+    <p id="demo"></p>
+    <input type="button" value="change" onclick="Const()">
+</body>
+</html>

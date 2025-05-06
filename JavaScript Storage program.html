@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function time_click()
+        {
+            debugger;
+        if (sessionStorage.time_click) {
+                sessionStorage.time_click = Number(sessionStorage.time_click)+1;
+            }
+            else {
+            sessionStorage.time_click= 1;
+            }
+            document.getElementById("text").innerHTML = "You have clicked the button " + sessionStorage.time_click + " time(s).";
+        }
+</script>
+</head>
+<body>
+    <h1> Storage: </h1>
+    <input type="button" value="Click" onclick="time_click()"><br><br>
+    <label id="text"> 0 </label>
+</body>
+</html>
+
+
+<!-- Localstorage and sessionStorage are the two type in which we can Storage the data.
+Localstorage are non-expiry Storage
+sessionstorage are expiry Storage i.e; the data will be gone when we close the web borser. -->
